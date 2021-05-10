@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Descomplica Dev - Aqui você conhece um pouco mas dos nossos trabalhos.</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/pages/contato.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/site/favicon.ico">
+</head>
+
+<body>
+    <header id="header" class="page-contato">
+        <div class="container">
+            <div class="row">
+                <div class="col col-desktop-3 col-6">
+                    <a href="index.html">
+                        <img src="images/site/logo.png" alt="Logo DescomplicaDev">
+                    </a>
+                </div>
+                <div class="col col-desktop-9 col-6">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="quem-somos.html">Quem somos</a></li>
+                            <li><a href="contato.html" class="active">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-desktop-12 title">
+                    <h1>Alta produtividade em tempo real</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section section-center">
+            <h2>Contato</h2>
+            <p class="subtitle">
+                Entre em contato com nossa equipe e mantenha-se sempre conectado com nossos serviços<br> com suporte 24 horas, sempre online e pronto para lhe atender.
+            </p>
+
+            <section class="section">
+                <div class="container">
+                    <form action="./php/queRecebe.php" class="row" method="post">
+                        <div class="col col-desktop-6 col-6">
+                            <div class="input-control">
+                                <input id="nome" name="nome" type="text" required placeholder="Nome..." autocomplete="off">
+                                <label for="nome">Nome*</label>
+                            </div>
+                            <div class="input-control">
+                                <input id="email" name="email" type="email" required placeholder="Email..." autocomplete="off">
+                                <label for="email">Email*</label>
+                            </div>
+                            <div class="input-control">
+                                <input id="telefone" name="telefone" type="number" placeholder="Telefone...">
+                                <label for="telefone">Telefone</label>
+                            </div>
+                        </div>
+                        <div class="col col-desktop-6 col-6">
+                            <div class="input-control">
+                                <textarea id="mensagem" name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem..." maxlength="2000"></textarea>
+                                <label for="mensagem">Digite Algo</label>
+                            </div>
+                        </div>
+                        <div class="col col-desktop-6 col-6">
+                            <div class="exemplo-radio">
+                                <div class="field">
+                                    <label id="title-label" class="label">Serviço desejado</label>
+                                    <div class="controls">
+                                        <input type="radio" value="dev_site" name="servico" id="campo-radio1" />
+                                        <label for="campo-radio1">Desenvolvimento de Site</label>
+                                        <input type="radio" value="dev_mobile" name="servico" id="campo-radio2" />
+                                        <label for="campo-radio2">Desenvolvimento Mobile</label>
+                                        <input type="radio" value="consultoria" name="servico" id="campo-radio2" />
+                                        <label for="campo-radio2">Consultória</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-desktop-12 col-6">
+                            <input id="btn-enviar" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-offset-desktop-1 col-desktop-3">
+                    <p>
+                        <a href=""><img src="./images/site/logo.png" alt="Logo Descomplica Dev"></a>
+                    </p>
+                </div>
+                <div class="col col-offset-desktop-1 col-desktop-2 col-2">
+                    <h3>Contato</h3>
+                    <h4>Envie uma mensagem</h4>
+                    <p>WhatsApp: <br> (00) 99999-9999</p>
+                </div>
+                <div class="col col-desktop-3 social col-4">
+                    <a href=""><img class="facebook" src="images/social-facebook.png" alt=""></a>
+                    <a href=""><img src="images/social-twitter.png" alt=""></a>
+                    <a href=""><img src="images/social-youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        &copy; Copyright - 2020 - Todos os direitos reservados
+    </div>
+
+</body>
+
+</html>
